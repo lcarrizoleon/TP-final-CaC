@@ -134,7 +134,6 @@ header{
     width: 3rem;
     height: 3rem;
     border-radius: 0 0.5rem 0.5rem 0;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +249,7 @@ footer{
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 1250px){
     /*HEADER*/
     .menu{
         width: 75%;
@@ -268,11 +267,14 @@ footer{
     }
 
     .searchbar-box{
-        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-        transition: 2s ease-out;
+        color: white;
+        background-color: black;
+        transition: 1s ease-out;
     }
     
     .searchbar-box.active{
+        color: black;
+        background-color: rgb(245, 245, 245);
         border-radius: 0 0.5rem 0.5rem 0;
         transition: 0.1s ease-out;
     }
