@@ -228,17 +228,25 @@ body{
 
 .main-card-text-container{
     width: 95%;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .main-card-tag{
     font-weight: bold;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .main-card-title{
     font-weight: bold;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.main-card-text{
+    margin-bottom: 1rem;
 }
 
 /*FOOTER*/
