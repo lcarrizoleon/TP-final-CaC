@@ -114,8 +114,10 @@ header{
     width: 33%;
 }
 
-.logo-container a{
-    text-decoration: none;
+.logo-container h1{
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
 }
 
 /*SEARCHBAR*/
@@ -214,13 +216,13 @@ body{
     padding: 1rem 2rem 1rem 2rem;
     background-color: rgb(123, 23, 180);
     color: white;
-    border: 1px rgb(123, 23, 180) solid;
+    border: 1px solid rgb(123, 23, 180);
 }
 
 .main-cuestionario-button button:hover{
     cursor: pointer;
     background-color: rgb(160, 29, 29 );
-    border: 1px rgb(160, 29, 29 ) solid;
+    border: 1px solid rgb(160, 29, 29 );
 }
 
 /*NOTICIAS PAGINA PRINCIPAL*/
@@ -231,11 +233,22 @@ body{
 .main-container-title{
     width: 100%;
     text-align: left;
+    display: flex;
+    align-items: baseline;
 }
 
-.main-container-title h1{
-    margin: 0 0 1rem 3rem;
+.main-title{
+    color: rgb(123, 23, 180);
     padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-title-line{
+    border: 1px solid rgb(123, 23, 180);
+    height: 0;
+    width: 100%;
 }
 
 /*DISEÑO CARTA*/
@@ -288,6 +301,11 @@ body{
 .main-card-tag{
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: rgb(123, 23, 180);
+    background-color: white;
+    width: fit-content;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .main-card-title{
@@ -319,15 +337,25 @@ footer{
     }
 
     .menu{
-        width: 40%;
+        width: 50%;
     }
 
     .menu-link i{
         margin: 0 1rem 0 10%;
     }
+
+    .logo-container.active{
+        display: none;
+        width: 0;
+        transition: 0.3s ease;
+    }
     
     /*SEARCHBAR*/
     
+    .menu-search-container.active{
+        width: 65%;
+    }
+
     .searchbar-input input{
         float: right;
         width: 0;
@@ -363,7 +391,7 @@ footer{
     }
 
     .main-card{
-        width: 30rem;
+        width: 90%;
         height: 30rem;
     }
 }

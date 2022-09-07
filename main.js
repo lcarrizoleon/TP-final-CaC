@@ -17,17 +17,23 @@ document.querySelectorAll('.menu-link').forEach(n => n.addEventListener('click',
 const searchInput=document.querySelector('.searchbar-input');
 const searchButton=document.querySelector('.searchbar-box');
 const searchCancel=document.querySelector('.searchbar-cancel-box');
+const logoContainer=document.querySelector('.logo-container');
+const searchbarContainer=document.querySelector('.menu-search-container');
 
 searchButton.addEventListener('click', ()=>{
   searchInput.classList.toggle('active');
   searchButton.classList.toggle('active');
-  searchCancel.classList.toggle('active');  
+  searchCancel.classList.toggle('active');
+  logoContainer.classList.toggle('active');  
+  searchbarContainer.classList.toggle('active');  
 })
 
 searchCancel.addEventListener('click', ()=>{
     searchInput.classList.remove('active');
     searchButton.classList.remove('active');
     searchCancel.classList.remove('active');
+    logoContainer.classList.remove('active');
+    searchbarContainer.classList.remove('active');
 
     searchInput.querySelector('input').value='';
 })
