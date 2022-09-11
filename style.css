@@ -319,6 +319,69 @@ body{
 
 /*CUESTIONARIO*/
 
+.bloquepregunta {
+    --color-principal: rgb(160, 29, 29 );
+    --color-secundario: rgb(123, 23, 180);
+    --color-secundario-oscuro: rgb(86, 15, 127);
+    font-family: 'Roboto', sans-serif;
+}
+
+.pregunta {
+    color: white;
+    text-align: center;
+    padding: 1.5% 0px;
+    background-color: var(--color-secundario);
+    margin: 1.5% 0%;
+    border-top: 5px solid var(--color-secundario-oscuro);
+    border-bottom: 5px solid var(--color-secundario-oscuro);
+}
+
+.bloqueopciones {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+.opcion{
+    width: 20rem;
+    vertical-align: top;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5%;
+    margin: 0% 0.5%;
+}
+
+.opcion:hover {
+    color:rgb(245, 245, 245);
+    background-color: var(--color-secundario);
+    border-radius: 0.5rem;
+}
+
+.bloquedescripcion {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloquedescripcion h4 {
+    height: 3rem;
+    padding-bottom: 5%;
+}
+
+.bloquedescripcion p{
+    height: auto;
+    margin: 5% 0% 0% 0%;
+}
+
+.imagen {
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    vertical-align: top;
+}
+
 /*FOOTER*/
 
 footer{
